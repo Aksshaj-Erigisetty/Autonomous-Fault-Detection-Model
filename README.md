@@ -71,6 +71,7 @@ Training achieved a **loss ≈ 0.0024**, indicating the model effectively learne
 ### 4. **Reconstruction Error**
 After training, the Autoencoder reconstructs each sample.  
 The **Mean Squared Error (MSE)** between input and output is computed:
+
 ```python
 recon_error = np.mean((X - X_hat)**2, axis=1)
 The reconstruction error serves as an **anomaly score**, where higher values indicate unusual sensor patterns that may signify faults.
@@ -100,15 +101,15 @@ In this project, the **99th percentile rule** was selected for consistency and i
 
 ## Visual Analysis  
 
-### 🔹 Reconstruction Error Distribution  
+### Reconstruction Error Distribution  
 A histogram visualizes how the majority of reconstruction errors cluster near zero (normal behavior),  
 while a small fraction exceed the threshold—these are **potential faults**.
 
-### 🔹 Engine 1 – Reconstruction Error over Cycles  
+### Engine 1 – Reconstruction Error over Cycles  
 This plot shows how reconstruction error evolves over time for one engine.  
 Spikes near the end of life correspond to **mechanical degradation** or **fault conditions**.
 
-### 🔹 Engine 1 – Anomaly Flags  
+### Engine 1 – Anomaly Flags  
 Displays a binary fault indicator (1 = anomaly, 0 = normal) for each cycle.  
 A rise in anomalies indicates the system is entering a critical failure phase.
 
