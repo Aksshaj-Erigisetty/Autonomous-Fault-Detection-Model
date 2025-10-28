@@ -74,6 +74,7 @@ The **Mean Squared Error (MSE)** between input and output is computed:
 
 ```python
 recon_error = np.mean((X - X_hat)**2, axis=1)
+```
 The reconstruction error serves as an **anomaly score**, where higher values indicate unusual sensor patterns that may signify faults.
 
 ---
