@@ -2,11 +2,6 @@
 A machine learning project designed to automatically detect system faults or anomalies in real time using sensor data. This model applies supervised and unsupervised learning techniques — including Random Forest, SVM, and Autoencoders — to classify normal vs. faulty behavior.
 
 
-# Autonomous Fault Detection Model  
-
-A deep learning project that detects **faults in jet engines** using **Autoencoders** and **Anomaly Detection** techniques.  
-Developed as part of the **Data Science & Machine Learning portfolio** to demonstrate the application of unsupervised learning in predictive maintenance systems.
-
 ---
 
 ## Project Overview  
