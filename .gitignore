@@ -1,0 +1,19 @@
+# Ignore temporary and system files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+.DS_Store
+.env
+.ipynb_checkpoints/
+.cache/
+
+# Ignore data and model outputs
+/data/raw/
+data/*.zip
+models/*.h5
+models/*.keras
+outputs/*.csv
+outputs/*.png
+outputs/*.jpg
